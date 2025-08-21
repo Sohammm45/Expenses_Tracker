@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+  min-height: 100vh;
+}
+.container {
+  width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.balance {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.money {
+  font-size: 18px;
+  font-weight: bold;
+}
+.plus { color: green; }
+.minus { color: red; }
+.filter {
+  margin: 10px 0;
+}
+.filter select {
+  padding: 5px;
+  border-radius: 5px;
+}
+ul {
+  list-style: none;
+  margin: 10px 0;
+}
+li {
+  background: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+li.plus {
+  border-right: 5px solid green;
+}
+li.minus {
+  border-right: 5px solid red;
+}
+.delete-btn {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+}
+form input, form select, form button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+

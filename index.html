@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>💰 Expense Tracker</h2>
+
+    <div class="balance">
+      <h3>Balance</h3>
+      <h1 id="balance">₹0</h1>
+    </div>
+
+    <div class="summary">
+      <div>
+        <h4>Income</h4>
+        <p id="money-plus" class="money plus">+₹0</p>
+      </div>
+      <div>
+        <h4>Expense</h4>
+        <p id="money-minus" class="money minus">-₹0</p>
+      </div>
+    </div>
+
+    <div class="filter">
+      <label for="categoryFilter">Filter by Category:</label>
+      <select id="categoryFilter">
+        <option value="all">All</option>
+      </select>
+    </div>
+
+    <h3>History</h3>
+    <ul id="list"></ul>
+
+    <h3>Add Transaction</h3>
+    <form id="form">
+      <input type="text" id="text" placeholder="Enter description..." required />
+      <input type="number" id="amount" placeholder="Enter amount (use - for expense)" required />
+      <select id="category" required>
+        <option value="">Select Category</option>
+        <option value="Salary">Salary</option>
+        <option value="Food">Food</option>
+        <option value="Rent">Rent</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Other">Other</option>
+      </select>
+      <button type="submit">Add Transaction</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
